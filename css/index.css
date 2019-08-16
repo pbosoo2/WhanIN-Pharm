@@ -145,7 +145,7 @@ nav .main_menu>li{
     z-index: 20;
     position: fixed;
     right: 50px;
-    top: 27%;
+    top: 28%;
 }
 .quick_menu ul li a {
     display: block;
@@ -227,7 +227,7 @@ nav .main_menu>li{
     position: absolute;
     z-index: 3;
     left: 50%;
-    top: 29%;
+    top: 26%;
     transform: translatex(-50%);
     color: white;
     width: 100%;   
@@ -236,7 +236,7 @@ nav .main_menu>li{
     text-align: center;
 } 
 .video-text-wrap h2{
-    font-size:60px;
+    font-size:83px;
     text-shadow:  0px 2px 5px rgba(0, 0, 0, 0.8);
     margin-bottom: 5px;
 }
@@ -251,7 +251,7 @@ nav .main_menu>li{
     width: 700px;
     position: absolute;
     left: 50%;
-    top: 29%;
+    top: 26%;
     transform: translatex(-50%);
     z-index: 3;
 }
@@ -263,7 +263,7 @@ nav .main_menu>li{
     border-radius: 50%;
     background:rgba(255, 255, 255, 0.7);
     line-height: 100px;
-    margin-top: 50px; 
+    margin-top: 100px; 
     margin-bottom: 10px;
     margin-left: 1em;
     margin-right: 1em;
