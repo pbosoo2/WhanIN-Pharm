@@ -1,0 +1,381 @@
+
+.container{
+    max-width: 1200px;
+    min-width: 768px;
+    margin: 0% auto;
+    position: relative;
+}
+/* 공통 영역 */
+
+/* 헤더영역 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #333;
+}
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    font-size: 100%;
+    color: #333;
+}
+.row {
+    width: 100%;
+    position: relative;
+    /* overflow: hidden; */
+}
+.row:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.col-12 {
+    width: 100%;
+}
+
+/* header */
+header {
+    position: fixed;
+    z-index: 100;
+    height: 72px;
+}
+.logo{
+    position: absolute;
+    left: 0;
+    top: 15px;
+    z-index: 101;
+}
+.logo a {
+    display: block;
+}
+.logo a img {
+    width: 150px;
+}
+
+/* nav */
+nav{
+    position: relative;
+    z-index: 100;
+    background: #fff;
+    box-shadow: 0px 3px 10px rgba(51, 51, 51, 0.3);
+}
+/* .line {
+    width: 100%;
+    border-bottom: 2px solid #000;
+    position: absolute;
+    z-index: 2;
+    top: 77px;
+} */
+nav .nav_box{
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+}
+nav .main_menu {
+    float: right;
+}
+nav .main_menu>li{
+    width: 110px;
+    float: left;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.main_menu>li> a{
+    text-align: center;
+    display: block;
+    padding: 10px;
+    height: 50px;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+}
+.nav_line {
+    width: 90px;
+    height: 3px;
+    background: #2e3192;
+    position: absolute;
+    bottom: 0;
+    left: 8px;
+    display: none;
+}
+/* sub_menu */
+.sub_menu{
+    opacity: 0;
+    float: right;
+    transition: 0.4s;
+}
+
+.sub_menu{
+    float: left;
+    height: 300px;
+    height: 0;
+}
+.sub_menu ul li{
+    width: 150px;
+    height: 40px;
+    padding-top: 10px;
+} 
+
+.sub_menu>li a{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 14px;
+    padding-right: 0;
+    height: 50px;
+    display: block;
+    font-size: 15px;
+
+}
+.sub_menu>li a:hover{
+    color: #2e3192;
+    font-weight: bold;
+}
+.main_menu:hover .sub_menu{
+    opacity: 1;
+    height: 300px;
+}
+
+
+/* 메인섹션 */
+
+
+
+    
+    /* 메인비쥬얼 */
+
+.main-visual{
+    width: 100%;
+    min-width: 768PX;
+    height: 360px;
+    background-image: url("../images/faq.jpg");
+    background-size:cover;
+    background-position: center center;
+    position: relative;
+    
+}
+.visual-text{
+    padding-left: 20px;
+    position: absolute;
+    /* margin-left: 100px; */
+    /* margin-top:-125px; */
+    color: white;
+    margin-top: -12rem;
+}  
+.visual-text h1{
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+.visual-text h3 {
+    font-weight: normal;
+}
+.mainvisual-bottom{
+    background: #2e3192;
+    width: 100%;
+    min-width: 768px;
+    height: 60px;
+    position: relative;
+    margin-bottom: 1rem;
+}
+.mainvisual-bottom-menu{
+    max-width: 1200px;
+    min-width: 768px;
+    margin: 0% auto;
+    overflow: hidden;
+    position: relative;
+}
+.mainvisual-bottom-menu li{
+    float: left;
+    width: 150px;
+    text-align: center;
+    
+}
+.mainvisual-bottom-menu li a{
+    color: white;
+    display: block;
+    width: 150px;
+    font-size: 1.3rem;
+    padding-top:15px;
+    padding-bottom: 15px;
+}
+.mainvisual-bottom-menu li a:hover {
+    background: #fff;
+    color: #666;
+}
+
+.mainvisual-bottom-menu .active{
+    background: white;
+    /* border: 1px solid #2e3192; */
+}
+.mainvisual-bottom-menu .active a{   
+    color: #666666;
+}
+.breadcrumbs{
+    padding-right: 20px;
+    text-align: right;
+    color: #777;
+    font-size: 0.8rem;
+    /* border: 1PX solid RED; */
+}
+.breadcrumbs span{
+    font-weight: bolder;
+    color: #333;
+}
+
+/* faq 컨텐츠영역 */
+.faq-content{
+    margin-top: 80PX;
+}
+.faq-content ul{
+    overflow: hidden;
+}
+.faq-content ul li{
+    float: left;
+    width: 25%;
+    text-align: center;
+    border-right: 1px solid #ccc;
+    background: #666666;
+    height: 50px;
+    padding-top: 15px;
+}
+.faq-content ul li:first-child{
+    background: #1c4297;
+}
+.faq-content ul li:hover{
+    background: #1c4297;
+}
+
+.faq-content ul li a{
+    display: block;
+    color: white;
+}
+.faq-list{
+    margin-top: 2rem;
+}
+.faq-list ul{
+   width: 100%;
+}
+.faq-list ul li{
+    width: 100%;
+    min-width: 768px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    padding: 10px;
+    position: relative;
+}
+.faq-list ul li span.q{
+    display: block;
+    float: left;
+    text-align: center;
+    width: 46px;
+    height: 46px;
+    margin-right: 3rem;
+    background: #1c4297;
+    color: white;
+    position: absolute;
+    left: 0;
+    top: 0;
+    line-height: 46px;
+}
+.faq-list ul li span.title {
+    margin-left: 50px;
+}
+.faq-list ul li> p{
+    border: 1px solid #ccc;
+    padding-left: 5rem;
+}
+.reply{
+    width: 100%;
+    min-width: 768px;
+    overflow: hidden;
+    padding-left: 50px;
+    display: none;
+    margin-top: 20px;
+}
+.reply h1{
+    float: left;
+    width: 50px;
+    color: red;
+}
+.reply h1>p{
+    width: 90%;
+}
+
+/* footer  */
+footer{
+    margin-top: 100px;
+    min-width: 768px;
+    width: 100%;
+    height: 110px;
+    background: #F9F9F9;
+    border-top: 1px solid #ccc;
+}
+footer .container {
+    position: relative;
+}
+.footer-text{
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+}
+.footer-text .left {
+    margin-bottom: 10px;
+}
+.footer-text .left li {
+    display: inline-block;
+    margin-right: 0.5em;
+}
+.left li a:hover {
+    font-weight: bold;
+}
+.left li a.none:hover {
+    font-weight: normal;
+}
+
+.footer-text p{
+    font-size: 0.8rem;
+}
+.go-top {
+    position: relative;
+}
+.go-top a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border: 1px solid #333;
+    border-radius: 5px;
+    position: absolute;
+    right: 10px;
+    top: 30px;
+}
+.go-top a i {
+    position: absolute;
+    font-size: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media(max-width:900px){
+    /* header */
+    nav .main_menu>li {
+        margin-left: 0.3em;
+        margin-right: 0.3em;
+        transition: 0.4s;
+    }
+}
