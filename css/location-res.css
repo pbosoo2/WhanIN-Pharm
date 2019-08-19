@@ -300,7 +300,6 @@ nav .main_menu>li{
 .yagdo-left{
     width: 50%;
     float: left;
-    padding-top: 30px;
 }
 .yagdo-left >img{
     width: 100%;
@@ -308,7 +307,7 @@ nav .main_menu>li{
 .yagdo-right{
     width: 50%;
     float: left;
-    padding-top: 30px;
+    padding-top: 40px;
 
 }
 .traffic li{
@@ -328,7 +327,7 @@ nav .main_menu>li{
     font-size: 15px;
     margin-left: 20px;
 }
-@media(max-width:865px){
+@media(max-width:1010px){
     .yagdo-left{
         width: 100%;
         clear: both;
